@@ -1,0 +1,12 @@
+[2017-08-21T11:35:59,784][INFO ][logstash.outputs.elasticsearch] Elasticsearch pool URLs updated {:changes=>{:removed=>[], :added=>[http://localhost:9200/]}}
+[2017-08-21T11:35:59,822][INFO ][logstash.outputs.elasticsearch] Running health check to see if an Elasticsearch connection is working {:healthcheck_url=>http://localhost:9200/, :path=>"/"}
+[2017-08-21T11:36:00,289][WARN ][logstash.outputs.elasticsearch] Restored connection to ES instance {:url=>#<Java::JavaNet::URI:0x55d09d79>}
+[2017-08-21T11:36:00,298][INFO ][logstash.outputs.elasticsearch] Using mapping template from {:path=>nil}
+[2017-08-21T11:36:00,420][INFO ][logstash.outputs.elasticsearch] Attempting to install template {:manage_template=>{"template"=>"logstash-*", "version"=>50001, "settings"=>{"index.refresh_interval"=>"5s"}, "mappings"=>{"_default_"=>{"_all"=>{"enabled"=>true, "norms"=>false}, "dynamic_templates"=>[{"message_field"=>{"path_match"=>"message", "match_mapping_type"=>"string", "mapping"=>{"type"=>"text", "norms"=>false}}}, {"string_fields"=>{"match"=>"*", "match_mapping_type"=>"string", "mapping"=>{"type"=>"text", "norms"=>false, "fields"=>{"keyword"=>{"type"=>"keyword", "ignore_above"=>256}}}}}], "properties"=>{"@timestamp"=>{"type"=>"date", "include_in_all"=>false}, "@version"=>{"type"=>"keyword", "include_in_all"=>false}, "geoip"=>{"dynamic"=>true, "properties"=>{"ip"=>{"type"=>"ip"}, "location"=>{"type"=>"geo_point"}, "latitude"=>{"type"=>"half_float"}, "longitude"=>{"type"=>"half_float"}}}}}}}}
+[2017-08-21T11:36:00,455][INFO ][logstash.outputs.elasticsearch] New Elasticsearch output {:class=>"LogStash::Outputs::ElasticSearch", :hosts=>[#<Java::JavaNet::URI:0x6be3003>]}
+[2017-08-21T11:36:00,462][INFO ][logstash.pipeline        ] Starting pipeline {"id"=>"main", "pipeline.workers"=>1, "pipeline.batch.size"=>125, "pipeline.batch.delay"=>5, "pipeline.max_inflight"=>125}
+[2017-08-21T11:36:00,472][INFO ][logstash.inputs.redis    ] Registering Redis {:identity=>"redis://@127.0.0.1:6379/0 list:redis_test"}
+[2017-08-21T11:36:00,476][INFO ][logstash.pipeline        ] Pipeline main started
+[2017-08-21T11:36:00,633][INFO ][logstash.agent           ] Successfully started Logstash API endpoint {:port=>9600}
+[2017-08-21T11:39:19,217][WARN ][logstash.runner          ] SIGINT received. Shutting down the agent.
+[2017-08-21T11:39:19,236][WARN ][logstash.agent           ] stopping pipeline {:id=>"main"}

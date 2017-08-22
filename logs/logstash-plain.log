@@ -1,0 +1,48 @@
+[2017-08-22T11:05:33,185][INFO ][logstash.outputs.elasticsearch] Elasticsearch pool URLs updated {:changes=>{:removed=>[], :added=>[http://localhost:9200/]}}
+[2017-08-22T11:05:33,214][INFO ][logstash.outputs.elasticsearch] Running health check to see if an Elasticsearch connection is working {:healthcheck_url=>http://localhost:9200/, :path=>"/"}
+[2017-08-22T11:05:33,935][WARN ][logstash.outputs.elasticsearch] Restored connection to ES instance {:url=>#<Java::JavaNet::URI:0x6049054c>}
+[2017-08-22T11:05:33,944][INFO ][logstash.outputs.elasticsearch] Using mapping template from {:path=>nil}
+[2017-08-22T11:05:34,053][INFO ][logstash.outputs.elasticsearch] Attempting to install template {:manage_template=>{"template"=>"logstash-*", "version"=>50001, "settings"=>{"index.refresh_interval"=>"5s"}, "mappings"=>{"_default_"=>{"_all"=>{"enabled"=>true, "norms"=>false}, "dynamic_templates"=>[{"message_field"=>{"path_match"=>"message", "match_mapping_type"=>"string", "mapping"=>{"type"=>"text", "norms"=>false}}}, {"string_fields"=>{"match"=>"*", "match_mapping_type"=>"string", "mapping"=>{"type"=>"text", "norms"=>false, "fields"=>{"keyword"=>{"type"=>"keyword", "ignore_above"=>256}}}}}], "properties"=>{"@timestamp"=>{"type"=>"date", "include_in_all"=>false}, "@version"=>{"type"=>"keyword", "include_in_all"=>false}, "geoip"=>{"dynamic"=>true, "properties"=>{"ip"=>{"type"=>"ip"}, "location"=>{"type"=>"geo_point"}, "latitude"=>{"type"=>"half_float"}, "longitude"=>{"type"=>"half_float"}}}}}}}}
+[2017-08-22T11:05:34,076][INFO ][logstash.outputs.elasticsearch] New Elasticsearch output {:class=>"LogStash::Outputs::ElasticSearch", :hosts=>[#<Java::JavaNet::URI:0x11c18c2f>]}
+[2017-08-22T11:05:34,079][INFO ][logstash.pipeline        ] Starting pipeline {"id"=>"main", "pipeline.workers"=>1, "pipeline.batch.size"=>125, "pipeline.batch.delay"=>5, "pipeline.max_inflight"=>125}
+[2017-08-22T11:05:34,091][INFO ][logstash.inputs.redis    ] Registering Redis {:identity=>"redis://@127.0.0.1:6379/0 list:AIR-DATA"}
+[2017-08-22T11:05:34,101][INFO ][logstash.pipeline        ] Pipeline main started
+[2017-08-22T11:05:34,283][INFO ][logstash.agent           ] Successfully started Logstash API endpoint {:port=>9600}
+[2017-08-22T11:34:58,878][WARN ][logstash.runner          ] SIGINT received. Shutting down the agent.
+[2017-08-22T11:34:58,900][WARN ][logstash.agent           ] stopping pipeline {:id=>"main"}
+[2017-08-22T11:35:24,515][INFO ][logstash.outputs.elasticsearch] Elasticsearch pool URLs updated {:changes=>{:removed=>[], :added=>[http://localhost:9200/]}}
+[2017-08-22T11:35:24,529][INFO ][logstash.outputs.elasticsearch] Running health check to see if an Elasticsearch connection is working {:healthcheck_url=>http://localhost:9200/, :path=>"/"}
+[2017-08-22T11:35:24,792][WARN ][logstash.outputs.elasticsearch] Restored connection to ES instance {:url=>#<Java::JavaNet::URI:0x412e1834>}
+[2017-08-22T11:35:24,801][INFO ][logstash.outputs.elasticsearch] Using mapping template from {:path=>nil}
+[2017-08-22T11:35:24,911][INFO ][logstash.outputs.elasticsearch] Attempting to install template {:manage_template=>{"template"=>"logstash-*", "version"=>50001, "settings"=>{"index.refresh_interval"=>"5s"}, "mappings"=>{"_default_"=>{"_all"=>{"enabled"=>true, "norms"=>false}, "dynamic_templates"=>[{"message_field"=>{"path_match"=>"message", "match_mapping_type"=>"string", "mapping"=>{"type"=>"text", "norms"=>false}}}, {"string_fields"=>{"match"=>"*", "match_mapping_type"=>"string", "mapping"=>{"type"=>"text", "norms"=>false, "fields"=>{"keyword"=>{"type"=>"keyword", "ignore_above"=>256}}}}}], "properties"=>{"@timestamp"=>{"type"=>"date", "include_in_all"=>false}, "@version"=>{"type"=>"keyword", "include_in_all"=>false}, "geoip"=>{"dynamic"=>true, "properties"=>{"ip"=>{"type"=>"ip"}, "location"=>{"type"=>"geo_point"}, "latitude"=>{"type"=>"half_float"}, "longitude"=>{"type"=>"half_float"}}}}}}}}
+[2017-08-22T11:35:24,945][INFO ][logstash.outputs.elasticsearch] New Elasticsearch output {:class=>"LogStash::Outputs::ElasticSearch", :hosts=>[#<Java::JavaNet::URI:0x45c9ea59>]}
+[2017-08-22T11:35:24,955][INFO ][logstash.pipeline        ] Starting pipeline {"id"=>"main", "pipeline.workers"=>1, "pipeline.batch.size"=>125, "pipeline.batch.delay"=>5, "pipeline.max_inflight"=>125}
+[2017-08-22T11:35:24,966][INFO ][logstash.inputs.redis    ] Registering Redis {:identity=>"redis://@127.0.0.1:6379/0 list:AIR-DATA"}
+[2017-08-22T11:35:24,976][INFO ][logstash.pipeline        ] Pipeline main started
+[2017-08-22T11:35:25,130][INFO ][logstash.agent           ] Successfully started Logstash API endpoint {:port=>9600}
+[2017-08-22T11:36:41,568][WARN ][logstash.runner          ] SIGINT received. Shutting down the agent.
+[2017-08-22T11:36:41,595][WARN ][logstash.agent           ] stopping pipeline {:id=>"main"}
+[2017-08-22T11:39:46,177][INFO ][logstash.outputs.elasticsearch] Elasticsearch pool URLs updated {:changes=>{:removed=>[], :added=>[http://localhost:9200/]}}
+[2017-08-22T11:39:46,192][INFO ][logstash.outputs.elasticsearch] Running health check to see if an Elasticsearch connection is working {:healthcheck_url=>http://localhost:9200/, :path=>"/"}
+[2017-08-22T11:39:46,403][WARN ][logstash.outputs.elasticsearch] Restored connection to ES instance {:url=>#<Java::JavaNet::URI:0x6e3cb606>}
+[2017-08-22T11:39:46,409][INFO ][logstash.outputs.elasticsearch] Using mapping template from {:path=>nil}
+[2017-08-22T11:39:46,513][INFO ][logstash.outputs.elasticsearch] Attempting to install template {:manage_template=>{"template"=>"logstash-*", "version"=>50001, "settings"=>{"index.refresh_interval"=>"5s"}, "mappings"=>{"_default_"=>{"_all"=>{"enabled"=>true, "norms"=>false}, "dynamic_templates"=>[{"message_field"=>{"path_match"=>"message", "match_mapping_type"=>"string", "mapping"=>{"type"=>"text", "norms"=>false}}}, {"string_fields"=>{"match"=>"*", "match_mapping_type"=>"string", "mapping"=>{"type"=>"text", "norms"=>false, "fields"=>{"keyword"=>{"type"=>"keyword", "ignore_above"=>256}}}}}], "properties"=>{"@timestamp"=>{"type"=>"date", "include_in_all"=>false}, "@version"=>{"type"=>"keyword", "include_in_all"=>false}, "geoip"=>{"dynamic"=>true, "properties"=>{"ip"=>{"type"=>"ip"}, "location"=>{"type"=>"geo_point"}, "latitude"=>{"type"=>"half_float"}, "longitude"=>{"type"=>"half_float"}}}}}}}}
+[2017-08-22T11:39:46,534][INFO ][logstash.outputs.elasticsearch] New Elasticsearch output {:class=>"LogStash::Outputs::ElasticSearch", :hosts=>[#<Java::JavaNet::URI:0x59b806ff>]}
+[2017-08-22T11:39:46,537][INFO ][logstash.pipeline        ] Starting pipeline {"id"=>"main", "pipeline.workers"=>1, "pipeline.batch.size"=>125, "pipeline.batch.delay"=>5, "pipeline.max_inflight"=>125}
+[2017-08-22T11:39:46,546][INFO ][logstash.inputs.redis    ] Registering Redis {:identity=>"redis://@127.0.0.1:6379/0 list:AIR-DATA"}
+[2017-08-22T11:39:46,561][INFO ][logstash.pipeline        ] Pipeline main started
+[2017-08-22T11:39:46,698][INFO ][logstash.agent           ] Successfully started Logstash API endpoint {:port=>9600}
+[2017-08-22T11:40:16,481][WARN ][logstash.runner          ] SIGINT received. Shutting down the agent.
+[2017-08-22T11:40:16,554][WARN ][logstash.agent           ] stopping pipeline {:id=>"main"}
+[2017-08-22T11:42:54,764][INFO ][logstash.outputs.elasticsearch] Elasticsearch pool URLs updated {:changes=>{:removed=>[], :added=>[http://localhost:9200/]}}
+[2017-08-22T11:42:54,781][INFO ][logstash.outputs.elasticsearch] Running health check to see if an Elasticsearch connection is working {:healthcheck_url=>http://localhost:9200/, :path=>"/"}
+[2017-08-22T11:42:54,982][WARN ][logstash.outputs.elasticsearch] Restored connection to ES instance {:url=>#<Java::JavaNet::URI:0x44a51a10>}
+[2017-08-22T11:42:54,988][INFO ][logstash.outputs.elasticsearch] Using mapping template from {:path=>nil}
+[2017-08-22T11:42:55,100][INFO ][logstash.outputs.elasticsearch] Attempting to install template {:manage_template=>{"template"=>"logstash-*", "version"=>50001, "settings"=>{"index.refresh_interval"=>"5s"}, "mappings"=>{"_default_"=>{"_all"=>{"enabled"=>true, "norms"=>false}, "dynamic_templates"=>[{"message_field"=>{"path_match"=>"message", "match_mapping_type"=>"string", "mapping"=>{"type"=>"text", "norms"=>false}}}, {"string_fields"=>{"match"=>"*", "match_mapping_type"=>"string", "mapping"=>{"type"=>"text", "norms"=>false, "fields"=>{"keyword"=>{"type"=>"keyword", "ignore_above"=>256}}}}}], "properties"=>{"@timestamp"=>{"type"=>"date", "include_in_all"=>false}, "@version"=>{"type"=>"keyword", "include_in_all"=>false}, "geoip"=>{"dynamic"=>true, "properties"=>{"ip"=>{"type"=>"ip"}, "location"=>{"type"=>"geo_point"}, "latitude"=>{"type"=>"half_float"}, "longitude"=>{"type"=>"half_float"}}}}}}}}
+[2017-08-22T11:42:55,120][INFO ][logstash.outputs.elasticsearch] New Elasticsearch output {:class=>"LogStash::Outputs::ElasticSearch", :hosts=>[#<Java::JavaNet::URI:0x3b868645>]}
+[2017-08-22T11:42:55,127][INFO ][logstash.pipeline        ] Starting pipeline {"id"=>"main", "pipeline.workers"=>1, "pipeline.batch.size"=>125, "pipeline.batch.delay"=>5, "pipeline.max_inflight"=>125}
+[2017-08-22T11:42:55,138][INFO ][logstash.inputs.redis    ] Registering Redis {:identity=>"redis://@127.0.0.1:6379/0 list:AIR-DATA"}
+[2017-08-22T11:42:55,145][INFO ][logstash.pipeline        ] Pipeline main started
+[2017-08-22T11:42:55,288][INFO ][logstash.agent           ] Successfully started Logstash API endpoint {:port=>9600}
+[2017-08-22T11:43:01,081][WARN ][logstash.runner          ] SIGINT received. Shutting down the agent.
+[2017-08-22T11:43:01,153][WARN ][logstash.agent           ] stopping pipeline {:id=>"main"}
